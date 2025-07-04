@@ -28,7 +28,7 @@ public class MemberDao {
 			conn = new DBConnector().getConn();
 			String sql = """
 					SELECT name, addr
-					FROM emp
+					FROM member
 					WHERE num = ?
 					""";
 			psmt = conn.prepareStatement(sql);
